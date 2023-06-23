@@ -1,12 +1,9 @@
 <template>
   <div class="container">
-    <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/bottom.png'" alt=""
-      class="bottom" />
+    <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
     <img :src="src" alt="" class="pic" />
-    <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-left.png'" alt=""
-      class="left" @click="changePic(-1)" />
-    <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-right.png'" alt=""
-      class="right" @click="changePic(1)" />
+    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
+    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
   </div>
 </template>
 
@@ -20,11 +17,11 @@ export default {
     };
   },
   created() {
-    this.picArr = ['https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/1.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/2.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/3.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/4.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/5.webp'];
+    this.picArr = ['../../assets/导出12节气（5张）/立秋/1.webp',
+      '../../assets/导出12节气（5张）/立秋/2.webp',
+      '../../assets/导出12节气（5张）/立秋/3.webp',
+      '../../assets/导出12节气（5张）/立秋/4.webp',
+      '../../assets/导出12节气（5张）/立秋/5.webp'];
       this.src = this.picArr[0]
   },
   methods: {

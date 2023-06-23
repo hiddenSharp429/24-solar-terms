@@ -3,14 +3,9 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%97%A0%E5%AD%97%E8%83%8C%E6%99%AF9.png'" class="bgc" v-if="bgcFlag" />
-        <img
-        v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%A2%91%E6%96%876.png'"
-          class="beiwen"
-        v-if="bgcFlag"
-        :class="{ rotate: rotateFlag }"
-      />
-      <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png" alt="失败" class="person" />
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="./碑文6.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
         <div class="title" v-show="poemFlag1">小池</div>
       <div class="author" v-show="poemFlag2">杨万里</div>
       <div class="shi one" v-show="poemFlag3">
@@ -26,7 +21,7 @@
         早有蜻蜓立上头 <span>。</span>
       </div>
       
-      <audio id="audio" src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E5%B0%8F%E6%B1%A0%20%E6%9D%A8%E4%B8%87%E9%87%8C.m4a" hidden ref="aud"></audio>
+      <!-- <audio id="audio" src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E5%B0%8F%E6%B1%A0%20%E6%9D%A8%E4%B8%87%E9%87%8C.m4a" hidden ref="aud"></audio>
     </div>
     <div class="last">
           <div class="item">
@@ -48,8 +43,8 @@
           <div class="item">
               <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E7%AB%8B%E5%A4%8F-05.png"
                 alt="">
-            </div>
-        </div>
+            </div>-->
+        </div> 
   </div>
 </template>
 
@@ -228,8 +223,7 @@ export default {
     bottom: 20px;
   }
 }
-.one {
-}
+
 .two {
   right: 490px;
 }

@@ -1,19 +1,9 @@
 <template>
   <div class="container">
-    <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/bottom.png'" alt="" class="bottom" />
-      <img :src="src" alt="" class="pic" />
-    <img
-      v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-left.png'"
-        alt=""
-      class="left"
-      @click="changePic(-1)"
-    />
-    <img
-      v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-right.png'"
-        alt=""
-      class="right"
-      @click="changePic(1)"
-    />
+    <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
+    <img :src="src" alt="" class="pic" />
+    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
+    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
   </div>
 </template>
 
@@ -27,11 +17,11 @@ export default {
     };
   },
   created() {
-    this.picArr = ['https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/pic1.png',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/pic2.png',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/pic3.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/pic4.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/pic5.png'];
+    this.picArr = ['../../assets/lunbo/pic1.png',
+      '../../assets/lunbo/pic2.png',
+      '../../assets/lunbo/pic3.webp',
+      '../../assets/lunbo/pic4.webp',
+      '../../assets/lunbo/pic5.png'];
     this.src = this.picArr[0]
   },
   methods: {
@@ -57,6 +47,7 @@ export default {
   margin-top: 250px;
   position: relative;
 }
+
 .bottom {
   position: absolute;
   width: 400px;
@@ -64,6 +55,7 @@ export default {
   left: 600px;
   bottom: 140px;
 }
+
 .pic {
   position: absolute;
   width: calc(460px * 0.8);
@@ -71,6 +63,7 @@ export default {
   top: 40px;
   left: 618px;
 }
+
 .left {
   width: 200px;
   height: 200px;
@@ -79,6 +72,7 @@ export default {
   top: 250px;
   cursor: pointer;
 }
+
 .right {
   width: 200px;
   height: 200px;

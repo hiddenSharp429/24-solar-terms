@@ -1,34 +1,34 @@
 <template>
   <div class="con">
-    <img :src="headSrc" alt="" class="head" />
+    <img src="../../assets/knowCard/head.png" alt="" class="head" />
     <div class="card">
       <div class="card-side front">
-        <img :src="springSrc1" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/3大雪/大雪正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc11" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/3大雪/大雪反面1.webp" alt="" />
       </div>
     </div>
     <div class="card" style="position: absolute; top: 130px; left: 980px;">
       <div class="card-side front">
-        <img :src="springSrc2" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/3大雪/大雪正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc22" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/3大雪/大雪反面2.webp" alt="" />
       </div>
-    </div>
-    <div class="left">
-      <div @click="$router.push('/show/winter/1')" class="left-item">
-        <div ></div>
-        <p>立冬</p>
-      </div>
-      <div class="left-item" @click="$router.push('/show/winter/2')">
-        <div ></div>
-        <p>小雪</p>
-      </div>
-      <div @click="$router.push('/show/winter/3')" class="left-item">
-        <div class="green"></div>
-        <p>大雪</p>
+      <div class="left">
+        <div @click="$router.push('/show/winter/1')" class="left-item">
+          <div></div>
+          <p>立冬</p>
+        </div>
+        <div class="left-item" @click="$router.push('/show/winter/2')">
+          <div></div>
+          <p>小雪</p>
+        </div>
+        <div @click="$router.push('/show/winter/3')" class="left-item">
+          <div class="green"></div>
+          <p>大雪</p>
+        </div>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
       springSrc11: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E9%9B%AA%E5%8F%8D%E9%9D%A21.webp',
       springSrc2: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E9%9B%AA%E6%AD%A3%E9%9D%A2.webp"),
       springSrc22: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E9%9B%AA%E5%8F%8D%E9%9D%A21.webp'
-      
+
     };
   },
   methods: {},
@@ -155,6 +155,7 @@ export default {
     background-color: blue;
   }
 }
+
 .green {
   background-color: blue;
 }

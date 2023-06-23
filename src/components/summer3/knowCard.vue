@@ -1,20 +1,20 @@
 <template>
   <div class="con">
-    <img :src="headSrc" alt="" class="head" />
+    <img src="../../assets/knowCard/head.png" alt="" class="head" />
     <div class="card">
       <div class="card-side front">
-        <img :src="springSrc1" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/3大暑/大暑正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc11" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/3大暑/大暑反面1.webp" alt="" />
       </div>
     </div>
     <div class="card" style="position: absolute; top: 130px; left: 980px;">
       <div class="card-side front">
-        <img :src="springSrc2" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/3大暑/大暑正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc22" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/3大暑/大暑反面2.webp" alt="" />
       </div>
     </div>
     <div class="left">

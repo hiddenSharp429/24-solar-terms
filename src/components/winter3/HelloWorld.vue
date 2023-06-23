@@ -3,12 +3,9 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%97%A0%E5%AD%97%E8%83%8C%E6%99%AF5.png'"
-        class="bgc" v-if="bgcFlag" />
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%A2%91%E6%96%8711.png'"
-        class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
-      <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png" alt="失败"
-        class="person" />
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="./碑文11.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
       <div class="title" v-show="poemFlag1">江雪</div>
       <div class="author" v-show="poemFlag2">柳宗元</div>
       <div class="shi one" v-show="poemFlag3">
@@ -26,7 +23,7 @@
       
       <!-- <audio id="audio" :src="url" hidden ref="aud"></audio> -->
     </div>
-    <div class="last">
+    <!-- <div class="last">
       <div class="item">
         <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E5%A4%A7%E9%9B%AA-01.png"
           alt="">
@@ -51,7 +48,7 @@
         <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E5%A4%A7%E9%9B%AA-06.png"
           alt="">
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -247,7 +244,7 @@ export default {
   }
 }
 
-.one {}
+
 
 .two {
   right: 500px;

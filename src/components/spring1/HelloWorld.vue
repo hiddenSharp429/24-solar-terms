@@ -3,26 +3,9 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img
-        v-lazy="
-          'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/noinscription.png'
-        "
-        class="bgc"
-        v-if="bgcFlag"
-      />
-      <img
-        v-lazy="
-          'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%A2%91%E6%96%87.png'
-        "
-        class="beiwen"
-        v-if="bgcFlag"
-        :class="{ rotate: rotateFlag }"
-      />
-      <img
-        src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png"
-        alt="失败"
-        class="person"
-      />
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="../../assets/img/碑文3.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
       <div class="title" v-show="poemFlag1">立春</div>
       <div class="author" v-show="poemFlag2">杜甫</div>
       <div class="shi one" v-show="poemFlag3">
@@ -49,38 +32,7 @@
       <div class="shi four" style="right: 835px" v-show="poemFlag11">
         呼儿觅纸一题诗 <span>。</span>
       </div>
-      <audio
-        id="audio"
-        src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E6%98%A5%20%E6%9D%9C%E7%94%AB.m4a"
-        hidden
-        ref="aud"
-      ></audio>
-    </div>
-    <div class="last">
-      <div class="item">
-        <img
-          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E6%98%A5-01.png"
-          alt=""
-        />
-      </div>
-      <div class="item">
-        <img
-          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E6%98%A5-02.png"
-          alt=""
-        />
-      </div>
-      <div class="item">
-        <img
-          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E6%98%A5-03.png"
-          alt=""
-        />
-      </div>
-      <div class="item">
-        <img
-          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E6%98%A5-04.png"
-          alt=""
-        />
-      </div>
+      <audio id="audio" src="../../assets/southSpring.mp3" hidden ref="aud"></audio>
     </div>
   </div>
 </template>
@@ -89,7 +41,7 @@
 import lunbo from "./lunbo";
 import knowCard from "./knowCard.vue";
 export default {
-  created() {},
+  created() { },
   data() {
     return {
       url: require("../../assets/southSpring.mp3"),
@@ -294,8 +246,7 @@ export default {
   }
 }
 
-.one {
-}
+.one {}
 
 .two {
   right: 480px;
