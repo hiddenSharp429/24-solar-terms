@@ -8,16 +8,17 @@
     <div class="faceLevelPage">
       <div class="leftContent">
         <div
-          v-for="(danmu, index) in danmus"
+          v-for="(Barrage, index) in Barrages"
           :key="index"
-          class="danmu-item"
+          class="Barrage-item"
           :style="{
-            top: danmu.top + 'px',
-            left: danmu.left + 'px',
-            animationDelay: danmu.delay + 's',
+            top: Barrage.top + 'px',
+            left: Barrage.left + 'px',
+            animationDelay: Barrage.delay + 's',
           }"
         >
-          {{ danmu.text }}
+          <img :src="Barrage.image" alt="弹幕图片" class="Barrage-image" />
+          {{ Barrage.text }}
         </div>
       </div>
       <div class="rightContent">
@@ -45,10 +46,28 @@ export default {
   created() {},
   data() {
     return {
-      danmus: [
-        { text: "弹幕1", top: 50, left: 10, delay: 0 },
-        { text: "弹幕2", top: 100, left: 30, delay: 1 },
-        { text: "弹幕3", top: 150, left: 50, delay: 2 },
+      Barrages: [
+        {
+          text: "弹幕1",
+          image: require("@/assets/demoBarrageImg/star.png"),
+          top: 100,
+          left: 500,
+          delay: 0,
+        },
+        {
+          text: "弹幕2",
+          image: require("@/assets/demoBarrageImg/watermelon.png"),
+          top: 300,
+          left: 370,
+          delay: 1,
+        },
+        {
+          text: "弹幕3",
+          image: require("@/assets/demoBarrageImg/tea.png"),
+          top: 150,
+          left: 200,
+          delay: 2,
+        },
         // 添加更多弹幕...
       ],
     };
@@ -100,18 +119,28 @@ export default {
   height: 100%;
   background-image: url(../assets/img/demoBackground.png);
   background-size: cover;
-  .danmu-item {
+  .Barrage-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
     font-size: 16px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* 使用rgba设置背景颜色和透明度 */
+    color: black;
+    background: rgba(255, 255, 255, .5);
+    border: 2px solid white;
+    backdrop-filter: blur(6px);
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
-    animation: danmu-animation 5s linear infinite;
+    animation: Barrage-animation 5s linear infinite;
+    .Barrage-image {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+    }
   }
 
-  @keyframes danmu-animation {
+  @keyframes Barrage-animation {
     0% {
       top: 200px;
     } /* 初始位置在容器的底部 */
