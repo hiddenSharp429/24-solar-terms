@@ -1,9 +1,27 @@
+<!--
+ * @Author: hiddenSharp429 z404878860@163.com
+ * @Date: 2023-06-24 02:28:44
+ * @LastEditors: hiddenSharp429 z404878860@163.com
+ * @LastEditTime: 2023-06-24 02:48:39
+ * @FilePath: \codee:\vue\24-solar-terms\src\components\spring1\lunbo.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <div class="container">
     <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
     <img :src="src" alt="" class="pic" />
-    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
-    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
+    <img
+      src="../../assets/lunbo/arrow-left.png"
+      alt=""
+      class="left"
+      @click="changePic(-1)"
+    />
+    <img
+      src="../../assets/lunbo/arrow-right.png"
+      alt=""
+      class="right"
+      @click="changePic(1)"
+    />
   </div>
 </template>
 
@@ -17,11 +35,12 @@ export default {
     };
   },
   created() {
-    this.picArr = ['../../assets/lunbo/pic1.png',
-      '../../assets/lunbo/pic2.png',
-      '../../assets/lunbo/pic3.webp',
-      '../../assets/lunbo/pic4.webp',
-      '../../assets/lunbo/pic5.png'];
+    this.picArr = [
+      require("@/assets/lunbo/beginOfSpring/pic1.png"),
+      require("@/assets/lunbo/beginOfSpring/pic2.png"),
+      require("@/assets/lunbo/beginOfSpring/pic3.webp"),
+      require("@/assets/lunbo/beginOfSpring/pic4.webp"),
+      require("@/assets/lunbo/beginOfSpring/pic5.png")];
     this.src = this.picArr[0]
   },
   methods: {

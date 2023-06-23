@@ -1,9 +1,27 @@
+<!--
+ * @Author: hiddenSharp429 z404878860@163.com
+ * @Date: 2023-06-24 02:28:44
+ * @LastEditors: hiddenSharp429 z404878860@163.com
+ * @LastEditTime: 2023-06-24 02:55:48
+ * @FilePath: \codee:\vue\24-solar-terms\src\components\spring2\lunbo.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <div class="container">
     <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
-    <img :src="'../../assets/导出12节气（5张）/雨水'" alt="" class="pic" />
-    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
-    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
+    <img :src="src" alt="" class="pic" />
+    <img
+      src="../../assets/lunbo/arrow-left.png"
+      alt=""
+      class="left"
+      @click="changePic(-1)"
+    />
+    <img
+      src="../../assets/lunbo/arrow-right.png"
+      alt=""
+      class="right"
+      @click="changePic(1)"
+    />
   </div>
 </template>
 
@@ -11,18 +29,20 @@
 export default {
   data() {
     return {
-      src: '',
+      src: "",
       picArr: [],
       index: 0,
     };
   },
   created() {
-    this.picArr = ['../../assets/导出12节气（5张）/雨水/16.webp',
-      '../../assets/导出12节气（5张）/雨水/17.webp',
-      '../../assets/导出12节气（5张）/雨水/18.webp',
-      '../../assets/导出12节气（5张）/雨水/19.webp',
-      '../../assets/导出12节气（5张）/雨水/20.webp'];
-    this.src = this.picArr[0]
+    this.picArr = [
+      require("@/assets/lunbo/rainWater/pic1.webp"),
+      require("@/assets/lunbo/rainWater/pic2.webp"),
+      require("@/assets/lunbo/rainWater/pic3.webp"),
+      require("@/assets/lunbo/rainWater/pic4.webp"),
+      require("@/assets/lunbo/rainWater/pic5.webp"),
+    ];
+    this.src = this.picArr[0];
   },
   methods: {
     changePic(num) {
