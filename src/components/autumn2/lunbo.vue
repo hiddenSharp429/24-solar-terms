@@ -1,19 +1,9 @@
 <template>
   <div class="container">
-    <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/bottom.png'" alt="" class="bottom" />
+    <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
     <img :src="src" alt="" class="pic" />
-    <img
-      v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-left.png'"
-        alt=""
-      class="left"
-      @click="changePic(-1)"
-    />
-    <img
-      v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-right.png'"
-        alt=""
-      class="right"
-      @click="changePic(1)"
-    />
+    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
+    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
   </div>
 </template>
 

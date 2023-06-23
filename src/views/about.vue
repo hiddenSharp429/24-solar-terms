@@ -1,19 +1,9 @@
 <template>
   <div class="con">
-    <div class="title">VISIT</div>
-    <div class="menu-block">
-      <span :class="{ animate1: flag }" class="First">First</span>
-      <span :class="{ animate1: flag }" class="Second">Second</span>
-      <span style="position: relative; left: 30px;" :class="{ animate1: flag }" class="Third">Third</span>
-      <div class="menu" @click="flag = !flag">
-        <div class="one" :class="{ top2: flag }"></div>
-        <div class="two" :class="{ top: flag }"></div>
-        <div class="three" :class="{ top1: flag }"></div>
-      </div>
-      <span :class="{ animate1: flag }" class="Third" style="margin-left: 80px;">Fourth</span>
-      <span :class="{ animate1: flag }" class="Second">Fifth</span>
-      <span :class="{ animate1: flag }" class="First">Fixth</span>
+    <div class="logo">
+          <img src="../assets/主页/logo.png" alt="" style="height: 100px; width:200px">
     </div>
+   
     <div class="swiper">
       <swiper :options="swiperOptions">
         <!-- slides -->
@@ -49,7 +39,7 @@
           alt="">
       </div>
       <div class="right">
-        <div>Time:2023.03.2415:00</div>
+        <div>Time:2023.03.24 15:00</div>
         <div>Location: SLC.106</div>
         <div>Participate in the offline access</div>
         <div>experience link, will be donated</div>
@@ -116,7 +106,7 @@ export default {
     .menu {
       width: 40px;
       height: 100%;
-      display: flex;
+      // display: flex;
       flex-direction: column;
       position: relative;
       left: 40px;
@@ -281,4 +271,68 @@ export default {
   top: 20px !important;
   opacity: 0;
 }
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../assets/主页/背景虚化.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    filter: blur(10px);
+  }
+  
+  .content {
+    z-index: 5;
+  }
+  
+  .router-link-active {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+  }
+  
+  .logo {
+    position: absolute;
+    left: 42%;
+    height: 50px;
+  }
+  
+  #nav {
+    /* position: absolute; */
+    right: 0;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 25px;
+    color: black;
+    vertical-align: center;
+    float: right;
+  }
+  
+  /* #nav ul {
+    list-style-type: circle;
+    margin-left: 50px;
+  } */
+  
+  #nav li {
+    padding: 60px;
+    display: inline;
+  }
+  
+  .lunbo {
+    left: 0;
+    top: 0;
+    margin-top: 130px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .describe {
+    float: right;
+  }
 </style>

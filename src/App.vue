@@ -1,14 +1,11 @@
 <template>
   <div id="app" class="app">
     <router-view />
-    <div
-      class="nav-container"
-      @mouseenter="enterFlag = true"
-      :class="{ enter: enterFlag }"
-    >
+    <div class="nav-container" @mouseenter="enterFlag = true" :class="{ enter: enterFlag }">
       <!-- 首页左边的那个点 -->
       <div class="circle"></div>
     </div>
+
     <div class="nav-list" v-if="enterFlag">
       <div class="nav-item" @click="$router.push('/')">Home</div>
       <div class="nav-item line" @click="$router.push('/room')">
@@ -17,8 +14,8 @@
       <div class="nav-item line" @click="$router.push('/reel')">
         Living Room
       </div>
-      <div class="nav-item line" @mouseenter="enterFlag1 = true">Bed Room</div>
-      <div class="nav-item line" @click="$router.push('/fust')">Guest Room</div>
+      <div class="nav-item line" @mouseenter="enterFlag1 = true" @click="$router.push('/show/spring/1')">Bed Room</div>
+      <div class="nav-item line" @click="$router.push('/about')">About</div>
       <div class="nav-item line" @click="$router.push('/demo')">DEMO</div>
       <div class="nav-item" @click="open()">Balcony</div>
       <div class="seasons" v-if="enterFlag1" @mouseleave="enterFlag1 = false">
@@ -73,7 +70,23 @@ export default {
 <style lang="scss" scoped>
 /* 鼠标移到某个元素上时，显示自定义鼠标样式 */
 .app:hover {
-  cursor: none; /* 隐藏默认光标 */
+  cursor: none;
+  /* 隐藏默认光标 */
+}
+
+a {
+  cursor: url("./assets/鼠标/点击10x10_画板\ 1.png");
+}
+
+/* 鼠标移动时，自定义鼠标跟随鼠标移动 */
+.app:hover {
+  cursor: url("./assets/鼠标/10x10龙头_画板\ 1.png"),
+    auto;
+}
+
+.app:active {
+  cursor: url("./assets/鼠标/10x10龙头+点击.png"),
+    auto;
 }
 
 /* 鼠标移动时，自定义鼠标跟随鼠标移动 */
@@ -81,16 +94,19 @@ export default {
   cursor: url("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/10x10%E9%BE%99%E5%A4%B4_%E7%94%BB%E6%9D%BF%201.png"),
     auto;
 }
+
 .app:active {
   cursor: url("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%82%B9%E5%87%BB10x10_%E7%94%BB%E6%9D%BF%201.png"),
     auto;
 }
+
 #app {
   margin: 0;
   padding: 0;
   max-width: 100vw;
   position: relative;
 }
+
 .tip {
   z-index: 10;
   position: absolute;
@@ -104,9 +120,11 @@ export default {
   color: #fff;
   text-align: center;
   font-size: 40px;
+
   .first {
     margin-top: 40px;
   }
+
   .close {
     font-size: 60px;
     position: absolute;
@@ -115,6 +133,7 @@ export default {
     cursor: pointer;
   }
 }
+
 .nav-container {
   z-index: 10;
   position: absolute;
@@ -166,7 +185,7 @@ export default {
     font-size: 18px;
     word-wrap: normal;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -196,5 +215,4 @@ export default {
     text-align: center;
     cursor: pointer;
   }
-}
-</style>
+}</style>

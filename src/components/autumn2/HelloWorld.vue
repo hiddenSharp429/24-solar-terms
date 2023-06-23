@@ -3,12 +3,9 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%97%A0%E5%AD%97%E8%83%8C%E6%99%AF7.png'"
-        class="bgc" v-if="bgcFlag" />
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%A2%91%E6%96%871.png'"
-        class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
-      <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png" alt="失败"
-        class="person" />
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="./碑文1.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
       <div class="title" v-show="poemFlag1">望洞庭</div>
       <div class="author" v-show="poemFlag2">刘禹锡</div>
       <div class="shi one" v-show="poemFlag3">
@@ -246,7 +243,6 @@ export default {
   }
 }
 
-.one {}
 
 .two {
   right: 480px;

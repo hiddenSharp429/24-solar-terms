@@ -1,6 +1,6 @@
 <template>
   <div class="skw-pages" @mousewheel="debounceInput">
-    <div class="page1">
+    <div class="page1"> 
       <img src="../assets/Seasons/all.webp" alt="">
     </div>
     

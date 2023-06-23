@@ -3,14 +3,9 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%97%A0%E7%A2%91%E8%83%8C%E6%99%AF2.png'" class="bgc" v-if="bgcFlag" />
-        <img
-        v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%A2%91%E6%96%875.png'"
-          class="beiwen"
-        v-if="bgcFlag"
-        :class="{ rotate: rotateFlag }"
-      />
-      <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png" alt="失败" class="person" />
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="./碑文5.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
         <div class="title" v-show="poemFlag1">清明</div>
       <div class="author" v-show="poemFlag2">杜牧</div>
       <div class="shi one" v-show="poemFlag3">
@@ -26,8 +21,8 @@
         牧童遥指杏花村 <span>。</span>
       </div>
       
-      <audio id="audio" src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E6%B8%85%E6%98%8E%20%E6%9D%9C%E7%89%A7.m4a" hidden ref="aud"></audio>
-    </div>
+      <!-- <audio id="audio" src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E6%B8%85%E6%98%8E%20%E6%9D%9C%E7%89%A7.m4a" hidden ref="aud"></audio> -->
+    <!-- </div>
     <div class="last">
         <div class="item">
           <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%B8%85%E6%98%8E-01.png"
@@ -48,9 +43,9 @@
         <div class="item">
             <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%B8%85%E6%98%8E-05.png"
               alt="">
-          </div>
+          </div>-->
       </div>
-  </div>
+  </div> 
 </template>
 
 <script>
@@ -228,8 +223,7 @@ export default {
     bottom: 20px;
   }
 }
-.one {
-}
+
 .two {
   right: 490px;
 }

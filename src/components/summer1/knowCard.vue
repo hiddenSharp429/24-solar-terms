@@ -1,20 +1,20 @@
 <template>
   <div class="con">
-    <img :src="headSrc" alt="" class="head" />
+    <img src="../../assets/knowCard/head.png" alt="" class="head" />
     <div class="card">
       <div class="card-side front">
-        <img :src="springSrc1" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/1立夏/立夏正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc11" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/1立夏/立夏反面1.webp" alt="" />
       </div>
     </div>
     <div class="card" style="position: absolute; top: 130px; left: 980px;">
       <div class="card-side front">
-        <img :src="springSrc2" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/1立夏/立夏正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc22" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/1立夏/立夏反面2.png" alt="" />
       </div>
     </div>
     <div class="left">
@@ -43,7 +43,7 @@ export default {
       springSrc11: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%AB%8B%E5%A4%8F%E5%8F%8D%E9%9D%A21.webp',
       springSrc2: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%AB%8B%E5%A4%8F%E6%AD%A3%E9%9D%A2.webp"),
       springSrc22: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%AB%8B%E5%A4%8F%E5%8F%8D%E9%9D%A22.webp',
-      
+
     };
   },
   methods: {},
@@ -155,6 +155,7 @@ export default {
     background-color: red;
   }
 }
+
 .green {
   background-color: red;
 }

@@ -1,20 +1,20 @@
 <template>
   <div class="con">
-    <img :src="headSrc" alt="" class="head" />
+    <img src="../../assets/knowCard/head.png" alt="" class="head" />
     <div class="card">
       <div class="card-side front">
-        <img :src="springSrc1" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/2夏至/夏至正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc11" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/2夏至/夏至反面1.webp" alt="" />
       </div>
     </div>
     <div class="card" style="position: absolute; top: 130px; left: 980px;">
       <div class="card-side front">
-        <img :src="springSrc2" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/2夏至/夏至正面.webp" alt="" />
       </div>
       <div class="card-side back">
-        <img :src="springSrc22" alt="" />
+        <img src="../../assets/知识卡片之十二个（枝头不变）/夏3个/2夏至/夏至反面2.webp" alt="" />
       </div>
     </div>
     <div class="left">
@@ -23,11 +23,11 @@
         <p>立夏</p>
       </div>
       <div class="left-item" @click="$router.push('/show/summer/2')">
-        <div class="green"></div>
+        <div ></div>
         <p>夏至</p>
       </div>
       <div @click="$router.push('/show/summer/3')" class="left-item">
-        <div></div>
+        <div class="green"></div>
         <p>大暑</p>
       </div>
     </div>
@@ -39,10 +39,10 @@ export default {
   data() {
     return {
       headSrc: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/head_webp.webp"),
-      springSrc1: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%8F%E8%87%B3%E6%AD%A3%E9%9D%A2.webp"),
-      springSrc11: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%8F%E8%87%B3%E5%8F%8D%E9%9D%A21.webp',
-      springSrc2: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%8F%E8%87%B3%E6%AD%A3%E9%9D%A2.webp"),
-      springSrc22: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%8F%E8%87%B3%E5%8F%8D%E9%9D%A21.webp'
+      springSrc1: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E6%9A%91%E6%AD%A3%E9%9D%A2.webp"),
+      springSrc11: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E6%9A%91%E5%8F%8D%E9%9D%A21.webp',
+      springSrc2: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E6%9A%91%E6%AD%A3%E9%9D%A2.webp"),
+      springSrc22: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%A4%A7%E6%9A%91%E5%8F%8D%E9%9D%A22.webp'
     };
   },
   methods: {},

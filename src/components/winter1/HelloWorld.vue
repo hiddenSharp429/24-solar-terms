@@ -3,15 +3,10 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%97%A0%E5%AD%97%E8%83%8C%E6%99%AF3.png'" class="bgc" v-if="bgcFlag" />
-        <img
-        v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%A2%91%E6%96%879.png'"
-          class="beiwen"
-        v-if="bgcFlag"
-        :class="{ rotate: rotateFlag }"
-      />
-      <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png" alt="失败" class="person" />
-        <div class="title" v-show="poemFlag1">终南望馀雪</div>
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="./碑文9.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
+      <div class="title" v-show="poemFlag1">终南望馀雪</div>
       <div class="author" v-show="poemFlag2">祖咏</div>
       <div class="shi one" v-show="poemFlag3">
         终南阴岭秀 <span>,</span>
@@ -25,27 +20,31 @@
       <div class="shi four" v-show="poemFlag6">
         城中增暮寒 <span>。</span>
       </div>
-      
+
       <!-- <audio id="audio" :src="url" hidden ref="aud"></audio> -->
     </div>
-    <div class="last">
-        <div class="item">
-          <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-01.png"
-            alt="">
-        </div>
-        <div class="item">
-          <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-02.png"
-            alt="">
-        </div>
-        <div class="item">
-          <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-03.png"
-            alt="">
-        </div>
-        <div class="item">
-          <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-04.png"
-            alt="">
-        </div>
+    <!-- <div class="last">
+      <div class="item">
+        <img
+          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-01.png"
+          alt="">
       </div>
+      <div class="item">
+        <img
+          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-02.png"
+          alt="">
+      </div>
+      <div class="item">
+        <img
+          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-03.png"
+          alt="">
+      </div>
+      <div class="item">
+        <img
+          src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E7%AB%8B%E5%86%AC-04.png"
+          alt="">
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -53,7 +52,7 @@
 import lunbo from "./lunbo";
 import knowCard from "./knowCard.vue";
 export default {
-  created() {},
+  created() { },
   data() {
     return {
       // url: require("../../assets/southSpring.mp3"),
@@ -115,11 +114,13 @@ export default {
     transform: translateX(-200px);
   }
 }
+
 @keyframes backinright {
   to {
     transform: translateX(-300px);
   }
 }
+
 @keyframes rotate {
   0% {
     transform: rotateZ(0deg) scale(1.1);
@@ -129,14 +130,17 @@ export default {
     transform: rotateZ(360deg) scale(0);
   }
 }
+
 @keyframes typing {
   from {
     height: 0px;
   }
+
   to {
     height: 180px;
   }
 }
+
 .maincontainer {
   position: relative;
   width: 100%;
@@ -147,11 +151,12 @@ export default {
   animation: sildein 1s linear;
   // background-color: rgb(239, 244, 251);
   font-family: 华文行楷;
-  
+
   .bgc {
     width: 100%;
     height: 100%;
   }
+
   .person {
     position: absolute;
     right: -220px;
@@ -162,6 +167,7 @@ export default {
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
+
   .beiwen {
     position: absolute;
     top: 220px;
@@ -170,10 +176,12 @@ export default {
     height: 300px;
   }
 }
+
 .rotate {
   animation: rotate 1s linear;
   animation-fill-mode: forwards;
 }
+
 .title {
   font-size: 60px;
   width: 60px;
@@ -184,14 +192,17 @@ export default {
   top: 10px;
   animation: typing 1s steps(3);
 }
+
 @keyframes typing1 {
   from {
     height: 0px;
   }
+
   to {
     height: 76px;
   }
 }
+
 .author {
   width: 38px;
   position: absolute;
@@ -201,14 +212,17 @@ export default {
   animation: typing1 1s steps(2);
   overflow: hidden;
 }
+
 @keyframes typing2 {
   from {
     height: 0px;
   }
+
   to {
     height: 400px;
   }
 }
+
 .shi {
   position: absolute;
   font-size: 48px;
@@ -218,31 +232,37 @@ export default {
   color: rgb(204, 119, 35);
   animation: typing2 4s linear;
   overflow: hidden;
+
   span {
     position: relative;
     left: 20px;
     bottom: 20px;
   }
 }
-.one {
-}
+
+
 .two {
   right: 490px;
 }
+
 .three {
   right: 565px;
 }
+
 .four {
   right: 640px;
 }
+
 @keyframes fadeout {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .english {
   height: 360px;
   position: absolute;
@@ -250,6 +270,7 @@ export default {
   top: 10px;
   animation: fadeout 1.5s linear;
 }
+
 .last {
   display: flex;
   flex-wrap: wrap;
@@ -264,5 +285,4 @@ export default {
       height: 100%;
     }
   }
-}
-</style>
+}</style>

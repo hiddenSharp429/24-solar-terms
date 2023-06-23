@@ -23,9 +23,9 @@ const routes = [
     component: resolve => require(['../views/room.vue'], resolve),
   },
   {
-    path: '/fust',
-    name: 'fust',
-    component: resolve => require(['../views/fust.vue'], resolve),
+    path: '/about',
+    name: 'about',
+    component: resolve => require(['../views/about.vue'], resolve),
   },
   {
     path: '/demo',
