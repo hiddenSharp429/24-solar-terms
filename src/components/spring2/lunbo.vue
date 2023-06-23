@@ -1,19 +1,9 @@
 <template>
   <div class="container">
-    <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/bottom.png'" alt="" class="bottom" />
-      <img :src="src" alt="" class="pic" />
-    <img
-      v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-left.png'"
-        alt=""
-      class="left"
-      @click="changePic(-1)"
-    />
-    <img
-      v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/arrow-right.png'"
-        alt=""
-      class="right"
-      @click="changePic(1)"
-    />
+    <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
+    <img :src="'../../assets/导出12节气（5张）/雨水'" alt="" class="pic" />
+    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
+    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
   </div>
 </template>
 
@@ -27,11 +17,11 @@ export default {
     };
   },
   created() {
-    this.picArr = ['https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/16.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/17.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/18.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/19.webp',
-      'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/20.webp'];
+    this.picArr = ['../../assets/导出12节气（5张）/雨水/16.webp',
+      '../../assets/导出12节气（5张）/雨水/17.webp',
+      '../../assets/导出12节气（5张）/雨水/18.webp',
+      '../../assets/导出12节气（5张）/雨水/19.webp',
+      '../../assets/导出12节气（5张）/雨水/20.webp'];
     this.src = this.picArr[0]
   },
   methods: {

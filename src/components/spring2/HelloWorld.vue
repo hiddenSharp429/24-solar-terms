@@ -3,13 +3,9 @@
     <knowCard />
     <lunbo />
     <div class="maincontainer" @click="play()">
-      <img
-        v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/wegame/%E6%97%A0%E5%AD%97%E7%A2%91%E6%96%871.png'"
-        class="bgc" v-if="bgcFlag" />
-      <img v-lazy="'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E7%A2%91%E6%96%874.png'"
-        class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
-      <img src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/person.png" alt="失败"
-        class="person" />
+      <img src="../../assets/img/noinscription.png" class="bgc" v-if="bgcFlag" />
+      <img src="./碑文4.png" class="beiwen" v-if="bgcFlag" :class="{ rotate: rotateFlag }" />
+      <img src="../../assets/img/person.png" alt="失败" class="person" />
       <div class="title" v-show="poemFlag1">春夜喜雨</div>
       <div class="author" v-show="poemFlag2">杜甫</div>
       <div class="shi one" v-show="poemFlag3">
@@ -24,10 +20,10 @@
       <div class="shi four" v-show="poemFlag6">
         晓看红湿处 <span>,</span>花重锦官城 <span>。</span>
       </div>
-      
+
       <!-- <audio id="audio" :src="url" hidden ref="aud"></audio> -->
     </div>
-    <div class="last">
+    <!-- <div class="last">
       <div class="item">
         <img
           src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E9%9B%A8%E6%B0%B4-01.png"
@@ -48,7 +44,7 @@
           src="https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/shouzhang/%E9%9B%A8%E6%B0%B4-04.png"
           alt="">
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
