@@ -3,32 +3,44 @@
     <img src="../../assets/knowCard/head.png" alt="" class="head" />
     <div class="card">
       <div class="card-side front">
-        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪正面.webp" alt="" />
+        <img
+          src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪正面.webp"
+          alt=""
+        />
       </div>
       <div class="card-side back">
-        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪反面1.webp" alt="" />
+        <img
+          src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪反面1.webp"
+          alt=""
+        />
       </div>
     </div>
-    <div class="card" style="position: absolute; top: 130px; left: 980px;">
+    <div class="card" style="position: absolute; top: 130px; left: 980px">
       <div class="card-side front">
-        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪正面.webp" alt="" />
+        <img
+          src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪正面.webp"
+          alt=""
+        />
       </div>
       <div class="card-side back">
-        <img src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪反面2.webp" alt="" />
+        <img
+          src="../../assets/知识卡片之十二个（枝头不变）/冬3个/2小雪/小雪反面2.webp"
+          alt=""
+        />
       </div>
-      <div class="left">
-        <div @click="$router.push('/show/winter/1')" class="left-item">
-          <div></div>
-          <p>立冬</p>
-        </div>
-        <div class="left-item" @click="$router.push('/show/winter/2')">
-          <div class="green"></div>
-          <p>小雪</p>
-        </div>
-        <div @click="$router.push('/show/winter/3')" class="left-item">
-          <div></div>
-          <p>大雪</p>
-        </div>
+    </div>
+    <div class="left">
+      <div @click="$router.push('/show/winter/1')" class="left-item">
+        <div></div>
+        <p>立冬</p>
+      </div>
+      <div class="left-item" @click="$router.push('/show/winter/2')">
+        <div class="green"></div>
+        <p>小雪</p>
+      </div>
+      <div @click="$router.push('/show/winter/3')" class="left-item">
+        <div></div>
+        <p>大雪</p>
       </div>
     </div>
   </div>
@@ -38,12 +50,16 @@
 export default {
   data() {
     return {
-      headSrc: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/head_webp.webp"),
-      springSrc1: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E6%AD%A3%E9%9D%A2.webp"),
-      springSrc11: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E5%8F%8D%E9%9D%A21.webp',
-      springSrc2: ("https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E6%AD%A3%E9%9D%A2.webp"),
-      springSrc22: 'https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E5%8F%8D%E9%9D%A22.webp'
-
+      headSrc:
+        "https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/head_webp.webp",
+      springSrc1:
+        "https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E6%AD%A3%E9%9D%A2.webp",
+      springSrc11:
+        "https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E5%8F%8D%E9%9D%A21.webp",
+      springSrc2:
+        "https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E6%AD%A3%E9%9D%A2.webp",
+      springSrc22:
+        "https://chuanasirenzu207804-1317470869.cos.ap-guangzhou.myqcloud.com/19403/%E5%B0%8F%E9%9B%AA%E5%8F%8D%E9%9D%A22.webp",
     };
   },
   methods: {},
@@ -146,12 +162,11 @@ export default {
     }
   }
 
-  >div:first-child {
+  > div:first-child {
     margin-top: 200px;
   }
 
-
-  >div:hover div {
+  > div:hover div {
     background-color: blue;
   }
 }

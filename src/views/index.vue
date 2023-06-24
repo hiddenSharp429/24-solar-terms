@@ -1,7 +1,7 @@
 <template>
   <div class="skw-pages" @mousewheel="debounceInput">
     <div class="page1"> 
-      <img src="../assets/Seasons/all.webp" alt="">
+      <img src="../assets/Seasons/all.jpg" alt="">
     </div>
     
     <div class="skw-page skw-page-1" :class="{ inactive: curPage !== 1, active: curPage === 1 }">

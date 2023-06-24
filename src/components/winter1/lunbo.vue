@@ -2,8 +2,18 @@
   <div class="container">
     <img src="../../assets/lunbo/bottom.png" alt="" class="bottom" />
     <img :src="src" alt="" class="pic" />
-    <img src="../../assets/lunbo/arrow-left.png" alt="" class="left" @click="changePic(-1)" />
-    <img src="../../assets/lunbo/arrow-right.png" alt="" class="right" @click="changePic(1)" />
+    <img
+      src="../../assets/lunbo/arrow-left.png"
+      alt=""
+      class="left"
+      @click="changePic(-1)"
+    />
+    <img
+      src="../../assets/lunbo/arrow-right.png"
+      alt=""
+      class="right"
+      @click="changePic(1)"
+    />
   </div>
 </template>
 
@@ -11,18 +21,20 @@
 export default {
   data() {
     return {
-      src: '',
+      src: "",
       picArr: [],
       index: 0,
     };
   },
   created() {
-    this.picArr = ['../../assets/导出12节气（5张）/立冬/41.webp',
-      '../../assets/导出12节气（5张）/立冬/42.webp',
-      '../../assets/导出12节气（5张）/立冬/43.webp',
-      '../../assets/导出12节气（5张）/立冬/44.webp',
-      '../../assets/导出12节气（5张）/立冬/45.webp'];
-    this.src = this.picArr[0]
+    this.picArr = [
+      require("@/assets/lunbo/beginningOfWinter/pic1.webp"),
+      require("@/assets/lunbo/beginningOfWinter/pic2.webp"),
+      require("@/assets/lunbo/beginningOfWinter/pic3.webp"),
+      require("@/assets/lunbo/beginningOfWinter/pic4.webp"),
+      require("@/assets/lunbo/beginningOfWinter/pic5.webp"),
+    ];
+    this.src = this.picArr[0];
   },
   methods: {
     changePic(num) {
