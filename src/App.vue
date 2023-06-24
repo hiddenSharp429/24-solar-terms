@@ -16,7 +16,7 @@
       </div>
       <div class="nav-item line" @mouseenter="enterFlag1 = true" @click="$router.push('/show/spring/1')">Bed Room</div>
       <div class="nav-item line" @click="$router.push('/about')">About</div>
-      <div class="nav-item line" @click="$router.push('/demo')">DEMO</div>
+      <div class="nav-item line" @click="$router.push('/demo')">Card</div>
       <div class="nav-item" @click="open()">Balcony</div>
       <div class="seasons" v-if="enterFlag1" @mouseleave="enterFlag1 = false">
         <div class="seasons-item" @click="$router.push('/show/spring/1')">
